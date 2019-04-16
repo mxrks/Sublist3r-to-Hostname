@@ -1,10 +1,9 @@
 # Sublist3r Lookup
 This simple bash script will lookup each sublist3r subdomain and output it with it's corresponding IP Address.
 
-
 # Example usage
 
-sublist3r -d housing.org.uk -o sublist3r.txt && cat sublist3r.txt | sudo xargs ./lookup.sh >> IPoutput.txt
+sublist3r -d housing.org.uk -o sublist3r.txt && cat sublist3r.txt | sudo xargs ./Lookup.sh > Sublist3rToIP.txt
 
 # Standard sublist3r output
 ```
