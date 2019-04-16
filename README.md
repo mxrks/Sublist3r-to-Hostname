@@ -7,7 +7,7 @@ Executing the commands below will do the following:
 
 # Example usage
 
-sublist3r -d -b amazon.com -o sublist3r.txt && cat sublist3r.txt | sudo xargs ./Lookup.sh > Sublist3rToIP.txt
+sublist3r -b -d amazon.com -o sublist3r.txt && cat sublist3r.txt | sudo xargs ./Lookup.sh > Sublist3rToIP.txt
 
 # After execution
 Subdomain followed by IP address
