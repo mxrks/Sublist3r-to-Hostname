@@ -1,18 +1,13 @@
 # Sublist3r Lookup
 This simple bash script will lookup each sublist3r subdomain and output it with it's corresponding IP Address.
 
+Executing the commands below will do the following:
+- Run Sublist3r with bruteforce flag on a domain of your choice and output to sublist3r.txt
+- cat Sublist3r.txt and execute the lookup script, outputing it to a new file.
+
 # Example usage
 
 sublist3r -d housing.org.uk -o sublist3r.txt && cat sublist3r.txt | sudo xargs ./Lookup.sh > Sublist3rToIP.txt
-
-# Standard sublist3r output
-```
-www.amazon.com
-154-10.amazon.com
-154-100.amazon.com
-154-101.amazon.com
-154-102.amazon.com
-```
 
 # After execution
 Subdomain followed by IP address
